@@ -1,6 +1,6 @@
 # Robot-planning
 The implementation for a deposit of boxes with robots which move the boxes between them. The robots take commands from a person
-  The deposit is defined by a configuration of map[LIN][COL], there are N robots which are responsible of moving the boxes. map[x][y] represents the number of boxes from the cell of coordinates x, y in deposit. The commands given by that person are:
+  The deposit is defined by a configuration of map[LIN][COL], there are N robots which are responsible for moving the boxes. map[x][y] represents the number of boxes from the cell of coordinates x, y in deposit. The commands given by that person are:
     ADD_GET_BOX RobotId x y NrBoxes Priority
     ADD_DROP_BOX RobotId x y NrBoxes Priority
     EXECUTE RobotId
@@ -17,3 +17,8 @@ The implementation for a deposit of boxes with robots which move the boxes betwe
   The command UNDO delet the effect of the last executed command
   The command HOW_MUCH_TIME print an integer which represent how many commands did LAST_EXECUTED_COMMAND wait until execution
   The command HOW_MANY_BOXES print how many boxes has the robot in hands in that moment
+  
+  
+  
+  &nbsp; The implementation for a deposit of boxes with robots which move the boxes between them. The robots take commands from a person.
+                        &nbsp;The deposit is defined by a configuration of map[LIN][COL], there are N robots which are responsible for moving the boxes. Map[x][y] represents the number of boxes from the cell of coordinates x, y in deposit. They have to memorise all the commands until there is given an "EXECUTE" command and they have to execute the first command from the queue. The robots are able to recognise and answer to commands of dropping and getting (boxes), last executed command or how much a command have stayed in the queue
